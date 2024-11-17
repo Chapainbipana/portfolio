@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em;
+}
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+.home, .projects, .contact {
+    padding: 2em;
+    text-align: center;
+}
+.project-card {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+}
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+i:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    color: #007bff; 
+}
+#skills .card {
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+#skills .card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); 
+}
+
+#skills h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#skills ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+#skills i {
+    color: #28a745; 
+    margin-right: 10px;
+}
+i {
+    color: #007bff; /* Blue color for the arrow */
+    margin-right: 10px; /* Add some spacing after the arrow */
+    font-size: 1rem; /* Adjust the icon size */
+}
+.underlined {
+    text-decoration: underline;
+  }
+  @keyframes scrollEffect {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+.auto-scroll {
+    animation: scrollEffect 3s ease-in-out infinite; 
+    transition: transform 0.3s ease;
+}
+.contact-links a {
+    color: white; /* Make icons white */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.contact-links a:hover {
+    color: #f8f9fa; /* Slightly lighter white on hover */
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
