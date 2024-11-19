@@ -15,4 +15,4 @@ use App\Http\Controllers\PortfolioController;
 
 
 Route::get('/', [PortfolioController::class, 'index']);
-Route::get('/contanct', [PortfolioController::class, 'storeContact'])->name('contact.store');
+Route::post('/contanct', [PortfolioController::class, 'storeContact'])->name('contact.store');

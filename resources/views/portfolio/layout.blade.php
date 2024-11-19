@@ -239,12 +239,12 @@
                 
                 <div class="row">
                     <div class="col-md-6">
-                        <form action="" method="post">
+                        <form action="{{Route('contact.store')}}" method="post">
                             @csrf
                             
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                <input type="text" class="form-control" id="name" name="name"  pattern="[A-Za-z\s]+" placeholder="Your Name" required>
                             </div>
                             
                             
@@ -268,7 +268,7 @@
                             <a href="https://www.facebook.com/bipana.chapain" target="_blank" class="me-3">
                                 <i class="fab fa-facebook fa-2x"></i>
                             </a>
-                            <a href="https://www.instagram.com/bipanachapain" target="_blank" class="me-3">
+                            <a href="https://www.instagram.com/chapainbipana" target="_blank" class="me-3">
                                 <i class="fab fa-instagram fa-2x"></i>
                             </a>
                             <a href="mailto:chapai.bipana65@gmail.com"target="_blank" class="me-3">
